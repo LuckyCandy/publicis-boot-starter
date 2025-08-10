@@ -1,0 +1,55 @@
+{
+  "properties": [
+    {
+      "name": "aliyun.sms.access-key-id",
+      "type": "java.lang.String",
+      "description": "阿里云访问密钥ID"
+    },
+    {
+      "name": "aliyun.sms.access-key-secret",
+      "type": "java.lang.String",
+      "description": "阿里云访问密钥Secret"
+    },
+    {
+      "name": "aliyun.sms.sign-name",
+      "type": "java.lang.String",
+      "description": "短信签名名称"
+    },
+    {
+      "name": "aliyun.sms.region-id",
+      "type": "java.lang.String",
+      "description": "短信服务地域ID",
+      "defaultValue": "cn-hangzhou"
+    },
+    {
+      "name": "aliyun.sms.endpoint",
+      "type": "java.lang.String",
+      "description": "短信服务端点",
+      "defaultValue": "dysmsapi.aliyuncs.com"
+    },
+    {
+      "name": "aliyun.sms.connect-timeout",
+      "type": "java.lang.Integer",
+      "description": "连接超时时间(毫秒)",
+      "defaultValue": 5000
+    },
+    {
+      "name": "aliyun.sms.read-timeout",
+      "type": "java.lang.Integer",
+      "description": "读取超时时间(毫秒)",
+      "defaultValue": 5000
+    },
+    {
+      "name": "aliyun.sms.auto-retry",
+      "type": "java.lang.Boolean",
+      "description": "是否开启重试",
+      "defaultValue": false
+    },
+    {
+      "name": "aliyun.sms.max-retry",
+      "type": "java.lang.Integer",
+      "description": "最大重试次数",
+      "defaultValue": 3
+    }
+  ]
+}

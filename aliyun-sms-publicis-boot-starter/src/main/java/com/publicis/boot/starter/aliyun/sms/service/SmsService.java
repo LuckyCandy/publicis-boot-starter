@@ -4,7 +4,7 @@ import java.util.function.Consumer;
 
 public interface SmsService {
     /**
-     * Universal text message sending
+     * Send template message
      * @param phoneNumber String
      * @param templateCode String
      * @param templateParam String
@@ -12,7 +12,11 @@ public interface SmsService {
     void sendWithTemplate(String phoneNumber, String templateCode, String templateParam) throws Exception;
 
     /**
-     * Send text messages and customize the handling of exceptions
+     * Send template messages and customize the handling of exceptions
+     * @param phoneNumber String
+     * @param templateCode String
+     * @param templateParam String
+     * @param onError Consumer<Throwable>
      */
     void sendWithTemplate(String phoneNumber, String templateCode, String templateParam, Consumer<Throwable> onError);
 }
